@@ -30,7 +30,7 @@ print(os.listdir())
 #       Réimprimez les répertoires et les fichiers dans votre 'Document'
 print(f"Q6{'_'*60}")
 os.makedirs("OS-ExercQ5/Subdir1")
-
+print(os.listdir())
 
 #Q7   Renommez le répertoire Subdir1 pour qu'il s'appelle Sous_repertoire
 print(f"Q6{'_'*60}")
@@ -40,7 +40,9 @@ os.rename("Subdir1", "Sous_repertoire")
 # Q8   suppression du répertoire OS-ExercQ6 et de son contenu
 #       Réimprimez les répertoires et les fichiers dans votre 'Document'
 print(f"Q6{'_'*60}")
-
+os.chdir('OS-OS-ExercQ6')
+os.rmdir()
+print(os.listdir())
 
 
 

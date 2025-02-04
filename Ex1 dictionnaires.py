@@ -54,7 +54,8 @@ print(f"Q5{80*'_'}")
 # Utilisez la méthode pop qui en plus d'enlever la clé, vous retourne la valeur qu'on enlève
 # Q5: Enlevez la clé 'age' de l'étudiant, mais imprimez la valeur qu'elle avait
 #      Dans le terminal on veut: Q6: on a enlevé l'âge de l'étudiant, sa valeur était: 17
-
+age_etudiant = etudiant.pop("age")
+print(f"on a enlevé l'âge de l'étudiant, sa valeur était: {age_etudiant}")
 
 
 
@@ -64,3 +65,5 @@ print(f"Q6{80*'_'}")
 # On peut obtenir le nombre de paires clés:valeurs dans notre dictionnaire avec la fonction len()
 # Q6: Combient de paires clés:valeurs avons-nous maintenant dans notre dictionnaire?
 #      Dans le terminal: Q7: Nous avons maintenant X paires clés valeurs.
+nb_clef = len(etudiant)
+print(f"Nous avons maintenant {nb_clef} paires clés valeurs")
