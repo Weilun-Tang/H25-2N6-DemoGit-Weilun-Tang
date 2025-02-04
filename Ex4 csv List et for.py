@@ -9,10 +9,17 @@ import csv
 
 # Nous avons des offres de stages and le fichier "Ex4 Emplois Reseautique.csv"
 # Faites un petit script qui ouvre le fichier csv en mode lecture et qui affiche uniquement les offres ou la demande de Diplôme a la valeur 'Dec' ou 'Non déterminé'
-with open("Ex4 Emplois Reseautique.csv", "r") as fichier_lu :
-    csv_reader = csv.reader(fichier_lu)
+with open("csvs\\Ex4 Emplois Reseautique.csv", "r") as fichier_lu :
+    csv_reader = csv.reader(fichier_lu, delimiter=';')
     for line in csv_reader :
-        print(csv_reader['Diplôme'])
+        Diplômes = line[4]
+        if Diplômes == 'Dec':
+            print('Dec')
+        elif Diplômes == 'Non déterminé' :
+            print('Non déterminé')
+        else :
+            print('False')
+        
 
 # Regardez le contenu du fichier "Ex4 Emplois Reseautique.csv"
 #          Observez que dans ce fichier, la première ligne comprends les en-têtes de colonne 
@@ -28,6 +35,8 @@ with open("Ex4 Emplois Reseautique.csv", "r") as fichier_lu :
 
 
 ficher_a_lire = os.path.join("csvs","Ex4 Emplois Reseautique.csv" )
+
+
 
 
 
