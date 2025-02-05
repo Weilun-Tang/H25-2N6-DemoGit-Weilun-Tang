@@ -14,12 +14,11 @@ with open("csvs\\Ex4 Emplois Reseautique.csv", "r") as fichier_lu :
     for line in csv_reader :
         Diplômes = line[4]
         if Diplômes == 'Dec':
-            print('Dec')
+            print(Diplômes)
         elif Diplômes == 'Non déterminé' :
-            print('Non déterminé')
-        else :
-            print('False')
-        
+            print(Diplômes)
+
+
 
 # Regardez le contenu du fichier "Ex4 Emplois Reseautique.csv"
 #          Observez que dans ce fichier, la première ligne comprends les en-têtes de colonne 
