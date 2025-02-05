@@ -23,8 +23,16 @@ import csv
 
 ficher_a_lire = os.path.join("csvs", "Ex5 Stages.csv")
 with open(ficher_a_lire, encoding='r') as fichier_lu :
-    csv_writer = csv.writer(fichier_lu, delimiter='|')
-    for line in csv_reader :
+    csv_writer = csv.writer(fichier_lu, delimiter='|', lineterminator='\n')
+    for line in csv_writer :
+        valeur_sortie = line[2]
+        if valeur_sortie == 'Prog' :
+            csv_writer.writerow(valeur_sortie)
+        elif valeur_sortie == 'TI' :
+            csv_writer.writerow(valeur_sortie)
+
+
+
 
 
 
